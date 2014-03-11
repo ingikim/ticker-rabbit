@@ -7,7 +7,7 @@ require 'rails/all'
 Bundler.require(:default, Rails.env)
 
 # config/application.rb
-config.assets.initialize_on_precompile = false
+# config.assets.initialize_on_precompile = false
 
 module TickerRabbit
   class Application < Rails::Application
