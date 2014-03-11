@@ -1,0 +1,266 @@
+/* # -- ELOQUENCE — COMING SOON PAGE
+================================================== */
+ 
+
+/* Table of Contents
+   ==================================================
+   
+    # -- 1150px and less
+    # -- 1024px and less
+    # -- 1000px and less
+    # -- 768px and less
+    # -- 690px and less
+    # -- 480px and less
+	
+   ==================================================
+*/
+
+
+/* # -- 1150PX AND LESS
+================================================== */
+
+@media all and (max-width: 1150px) {
+	
+	/* New style Team */
+	#team .body .persons > li {
+		margin: 20px 0;
+		width: 100%;
+		text-align: center;
+		overflow: hidden;
+	}
+	
+	#team .body .persons > li .photo {
+		display: inline-block;
+	}
+	
+	#team .body .persons > li .networks {
+		display: none;
+	}
+	
+	#team .body .persons > li .about {
+		margin-left: 20px;
+		padding: 0 15px;
+		width: 40%;
+		vertical-align: top;
+		text-align: left;
+		display: inline-block;
+	}
+	
+	#team .body .persons > li h2 {
+		margin: 0;
+	}
+	
+	/* Fix footer */
+	body > footer sections > .wrapper {
+		max-width: 100% !important;
+	}
+	
+	#feedback ul > li {
+		width: 50%;
+	}
+	
+	#contacts {
+		padding: 0;
+	}
+	
+	#contacts .text {
+		width: 35%;
+	}
+}
+
+
+/* # -- 1024PX AND LESS
+================================================== */
+
+@media all and (max-width: 1024px) {
+	
+	/* Fix footer */
+	body > footer {
+		position: static;
+	}
+	
+	#footer-space {
+		display: none;
+	}
+}
+
+/* # -- 1000PX AND LESS
+================================================== */
+
+@media all and (max-width: 1000px) {
+	
+	#services .body > ul {
+		margin: 0 auto;
+		max-width: 500px;
+			width: 100%
+	}
+}
+
+
+/* # -- 768PX AND LESS
+================================================== */
+
+@media all and (max-width: 768px) {
+	
+	#about .body .description > li {
+		margin: 15px 0;
+		padding: 0 5%;
+	}
+	
+	/* Twitter */
+	.twitter,
+	.twitter > li {
+		height: 185px;
+	}
+}
+
+
+/* # -- 690PX AND LESS
+================================================== */
+
+@media all and (max-width: 690px) {
+
+	#countdown {
+		margin: 25px 0;
+		margin-bottom: 75px;
+	}
+	
+	#countdown > div .num {
+		height: 45px;
+	}
+	
+	#countdown > div span {	
+		margin-top: 50px;
+		padding: 0;
+		padding-top: 10px;
+		font-size: 9px;
+		letter-spacing: 0;
+	}
+	
+	#countdown > div .num > div {
+		width: 25px;
+		height: 45px;
+		font-size: 36px;
+		line-height: 45px;
+	}
+	
+	/* Team */
+	#team .body .persons > li .about {
+		margin: 0;
+		margin-top: 20px;
+		max-width: 350px;
+		width: 100%;
+	}
+}
+
+
+/* # -- 480PX AND LESS
+================================================== */
+
+@media all and (max-width: 480px) {
+	
+	/* Home page styles */
+	#preloader .logo {
+		height: 75px;
+	}
+
+	#logo {
+		max-height: 75px;
+	}
+	
+	body > header {
+		display: none;
+	}
+	
+	#home > .content > .wrapper {
+		top: 5%;
+	}
+	
+	#countdown > div {
+		margin: 25px;
+	}
+	
+	/* Content */
+	#content {
+		padding: 45px 0;
+	}
+	
+	#content > section {
+		margin: 45px auto;
+	}
+	
+	/* About block */
+	#about .body {
+		padding: 0;
+	}
+	
+	#about .body .description > li {
+		max-width: 320px;
+		min-width: 320px;
+			width: 100%;
+	}
+	
+	/* Twitter */
+	.twitter > li .text {
+		font-size: 14px;
+	}
+	
+	.twitter > li .actions a {
+		font-size: 14px;
+	}
+	
+	/* Footer */
+	#last-section {
+		display: none;
+	}
+	
+	body > footer {
+		padding: 0;
+		height: auto;
+		overflow: auto;
+	}
+	
+	body > footer .page.image > .wrapper {
+		height: auto;
+	}
+	
+	body > footer section {
+		position: static !important;
+		margin: 35px 0;
+	}
+	
+	body > footer section:first-child {
+		margin-top: 0;
+	}
+	
+	body > footer section:last-child {
+		margin-bottom: 0;
+	}
+	
+	#feedback ul > li {
+		width: 100%;
+	}
+	
+	#contacts .text {
+		position: static;
+		width: 100%;
+		height: auto;
+		text-align: center;
+	}
+	
+	#map {
+		height: 400px;
+	}
+}
+
+/* For iPhone 3.5" */
+@media all and (max-device-height: 480px) {
+	
+	#home > .content > .wrapper {
+		top: 10%;
+	}
+	
+	#home .learn-more {
+		display: none;
+	}
+}

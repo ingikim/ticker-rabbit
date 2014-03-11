@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+		<!--// NAME OF YOUR SITE //-->
+		<title>Ticker Rabbit</title>
+		
+		<!--// STYLES OF THEME //-->		
+		<link rel="stylesheet" type="text/css" href="/assets/style.css">				<!-- Main styles -->
+		<link rel="stylesheet" type="text/css" href="/assets/fotorama.css">	<!-- Fotorama plugin -->
+		<link rel="stylesheet" type="text/css" href="/assets/devices.css">	<!-- Responsive -->
+		
+		<!--// FAVICON //-->
+		<link rel="shortcut icon" href="/assets/favicon.png">
+		
+		<!--// JQUERY 1.11.0 //-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		
+		<!--[if lte IE 9]>
+			<script type="text/javascript">
+				document.createElement('header');
+				document.createElement('nav');
+				document.createElement('section');
+				document.createElement('article');
+				document.createElement('aside');
+				document.createElement('footer');
+			</script>
+		<![endif]-->
+
+		<!-- // GOOGLE MAPS // -->
+		<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
+		<script src="/assets/gmap.js"></script>
+
+		<!--// PLUGINS //-->
+		<script src="/assets/jquery.queryloader2.js"></script>
+		<script src="/assets/jquery.fotorama.js"></script>
+		<script src="/assets/jquery.stellar.js"></script>
+
+		<script src="/assets/jquery.transit.js"></script>
+		<script src="/assets/jquery.easings.js"></script>
+		<script src="/assets/jquery.tweet-linkify.js"></script>
+		<script src="/assets/jquery.scrollStopped.js"></script>
+		<script src="/assets/jquery.placeholder.js"></script>
+		
+		<script src="/assets/jquery.countdown.sys.js"></script>
+		<script src="/assets/jquery.countdown.js"></script>
+		<script src="/assets/jquery.okvideo.js"></script>
+		
+		<!-- // ALL PLUGINS IN ONE FILE // -->
+		<!-- <script src="static/js/plugins/plugins.js"></script> -->
+		
+		<!--// MAIN SCRIPTS //-->
+		<script src="/assets/countdown.js"></script>
+		<script src="/assets/twitter.js"></script>
+		<script src="/assets/main.js"></script>
+		
+	</head>
+	
+	<body class="">
+		
+		<!-- // PRELOADER // -->
+		<div id="preloader" class="clearfix">
+			<div class="wrapper align-center">
+				<div class="logo">
+					<img src="assets/black-logo.png" alt="">
+				</div>
+			</div>
+		
+			<div class="half left"></div>
+			<div class="half right"></div>
+		</div>
+		<!-- // END PRELOADER // -->
+		
+		
+		<!-- // HEADER // -->
+		<header>
+			<nav class="wrapper align-center">
+				<ul>
+					<li><a href="#home" class="current">Home</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#team">Our team</a></li>
+					<li><a href="#social">Social</a></li>
+					<li><a href="#last-section">Send Message</a></li>
+				</ul>
+			</nav>
+		</header>
+		<!-- // END HEADER // -->
+		
+		
+		<!-- // MAIN SECTION // -->
+		<section id="home" class="page fullscreen"
+			data-video="true"
+			data-url="http://vimeo.com/56810854"
+			data-volume="0"
+			data-loop="true">
+		
+			<!-- // SLIDER // -->
+				
+			<div class="slider fotorama" 
+				data-width="100%"
+				data-height="100%"
+				data-fit="cover"
+				data-nav="false"
+				data-autoplay="true"
+				data-arrows="false"
+				data-transition="dissolve"
+				data-transitionduration="700"
+				
+				data-stellar-ratio="0.5">
+			
+				<!-- IF YOU WANT TO ADD IMAGE
+					 ADD <IMG> TAG
+					 EXAMPLE: <img src="image.png" alt=""> -->
+				
+				<!-- PLACE SLIDES HERE -->
+				<!-- <img src="PATH_TO_SLIDE" alt=""> -->
+				
+			  <img src="/assets/1.jpg" alt="">
+				<img src="/assets/2.jpg" alt="">
+				<img src="/assets/3.jpg" alt="">
+				
+			</div>
+			<!-- // END SLIDER // -->
+			
+			
+			<!-- // CONTENT // -->
+			
+			<!-- PATTERNS AVAILABLE
+					
+					 # dot-1
+					 # dot-2
+					 # dot-3
+					 # line-1
+					 # line-2
+					 # gradient-1
+					 # gradient-2
+					 # color-layout + data-color="rgba(0, 0, 0, 0.5)" (or data-color="#000000")
+					 				 
+					 USE ONLY WITH .PATTERN CLASS!
+					 EXAMPLE: class="pattern gradient-2" -->
+			
+			<div class="content pattern color-layout" data-color="rgba(0, 0, 0, 0.45)">
+			
+				<div class="wrapper align-center">
+				
+					<!-- // LOGO // -->
+					<div id="logo">
+						<img src="/assets/white-logo.png" alt="">
+					</div>
+					<!-- // END LOGO // -->
+					
+					<!-- // COUNTDOWN // -->
+					<div id="countdown" 
+						data-end="March 14, 2014 00:00:00"
+						data-serverSync="true"
+						data-expiryUrl="null">
+						
+						<div id="days" data-label="Days"></div>
+						<div id="hrs"  data-label="Hours"></div>
+						<div id="min"  data-label="Minutes"></div>
+						<div id="sec"  data-label="Seconds"></div>
+						<span id="cd"></span><!-- // COUNTDOWN SHELL // -->
+					</div>
+					<!-- // END COUNTDOWN // -->
+					
+					<div class="learn-more">
+						<a href="#last-section" class="btn big no-color">뭐니?</a>
+					</div>
+				</div>
+			</div>
+			<!-- // END CONTENT // -->
+		</section>
+		<!-- // END MAIN SECTION // -->
+		
+		<!-- // CONTENT // -->
+		<section id="content">
+			
+			<!-- // ABOUT // -->
+			<section id="about" class="page">
+				<div class="body">
+					
+					<ul class="description">
+						<li>
+							<h1>티커래빗 꽃 프로젝트란?</h1>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sed <a href="javascript:void(0)">venenatis</a> nulla, sit amet lacinia tellus. Mauris id nibh justo. Pellentesque sollicitudin eget mauris eu gravida. Nullam vel ornare eros.</p> 
+							<p>Nullam eu risus viverra, porta nisi non, tristique ligula. Praesent sit amet magna est. Nulla dapibus vitae dui sit amet fermentum. <a href="javascript:void(0)">Vestibulum</a> tempor lectus vel viverra rutrum. Quisque vitae rutrum metus. Morbi sit amet magna eros. Nullam accumsan consectetur eleifend.</p>
+						</li>
+						
+						<li>
+							<h1>꽃이 져도 너를 잊은 적 없다.</h1>
+							<p>Nulla dapibus tincidunt volutpat. Suspendisse vestibulum dolor metus, in convallis urna rutrum id. Aenean <a href="javascript:void(0)">malesuada</a>, lacus quis porttitor sollicitudin, nisi velit placerat turpis, a molestie urna sapien eu ipsum.</p> 
+							<p>Pellentesque ac pretium dolor. Praesent porta justo quam, dapibus cursus lorem laoreet nec. Praesent faucibus neque quis mollis <a href="javascript:void(0)">gravida</a>. In et diam quis lorem pulvinar dignissim. Morbi sed venenatis nulla, sit amet lacinia tellus.</p>
+						</li>
+					</ul>
+					
+				</div>
+			</section>
+			<!-- // END ABOUT // -->
+			
+			<!-- // NEWSLETTER // -->
+			<section id="newsletter" class="page image" style="background-image: url(/assets/collage.jpg)">
+				<div class="wrapper align-center pattern color-layout" data-color="rgba(85, 85, 92, 0.3)">
+				
+					<div><a href="#last-section" class="btn large">Send now</a></div>
+				
+				</div>
+			</section>
+			<!-- // END NEWSLETTER // -->	
+			
+			<!-- // TEAM // -->
+			<section id="team" class="page">
+				<header>
+					<h1>Meet our team</h1>
+					<hr>
+					<h5>Awesome guys</h5>
+				</header>
+				
+				<div class="body">
+					
+					<ul class="persons">
+						<li>
+							<div class="photo">
+								<img src="/assets/jay.png" alt="">
+							</div>
+							
+							<div class="networks">
+								<ul class="social">
+									<li><a href="#" class="fa fa-facebook-square"></a></li>
+									<li><a href="#" class="fa fa-linkedin-square"></a></li>
+									<li><a href="#" class="fa fa-twitter-square"></a></li>
+								</ul>
+							</div>
+							
+							<div class="about">
+								<h2>진유림</h2>
+								<h5>개자이너</h5>
+								
+								<p>전반적으로 둥글둥글 모으고 이끄는 야매리더. 디자인과 개발을 하는 개자이너.</p>
+							</div>
+						</li>
+						
+						<li>
+							<div class="photo">
+								<img src="/assets/yoon.png" alt="">
+							</div>
+							
+							<div class="networks">
+								<ul class="social">
+									<li><a href="#" class="fa fa-adn"></a></li>
+									<li><a href="#" class="fa fa-dribbble"></a></li>
+									<li><a href="#" class="fa fa-pinterest"></a></li>
+								</ul>
+							</div>
+							
+							<div class="about">
+								<h2>김윤호</h2>
+								<h5>마케터</h5>
+								
+								<p>프로젝트의 결과물을 보다 대중들에게 잘 전달해주고, 소통할 수 있는 창구를 고려해서 생각하는 역할. 그보다 팀 내에서 부드러운 분위기를 만들어 편안하게 아이디어를 던질 수 있는 기틀을 마련해주는 디자인 마케터.</p>
+							</div>
+						</li>
+						
+						<li>
+							<div class="photo">
+								<img src="/assets/chu.png" alt="">
+							</div>
+							
+							<div class="networks">
+								<ul class="social">
+									<li><a href="#" class="fa fa-flickr"></a></li>
+									<li><a href="#" class="fa fa-instagram"></a></li>
+									<li><a href="#" class="fa fa-google-plus-square"></a></li>
+								</ul>
+							</div>
+							
+							<div class="about">
+								<h2>추슬기</h2>
+								<h5>디자이너</h5>
+ 								
+								<p>프로젝트에 있어서 필요한 비주얼 요소와 팀 내의 의견을 시각적으로 이해를 도와주는 등의 디자인 작업을 맡는 역활 뼈속까지 디자이너.</p>
+							</div>
+						</li>
+					</ul>
+					
+				</div>
+			</section>
+			<!-- // END TEAM // -->
+			
+			<!-- // SOCIAL // -->
+			<section id="social" class="page image" style="background-image: url(/assets/twitter.jpg)" data-stellar-background-ratio="0.5">
+				<div class="wrapper align-center pattern color-layout" data-color="rgba(38, 38, 38, 0.8)">
+
+					<h2><a href="#" class="fa fa-twitter"></a></h2>
+					<br>
+					<ul class="twitter" data-username="TheVersalStudio" data-count="5"></ul>
+					
+				</div>
+			</section>
+			<!-- // END SOCIAL // -->
+			
+			<!-- // SERVICES // -->
+			<section id="services" class="page">
+				<div class="body">
+					
+					<ul>
+						<li>
+							<div class="icon">
+								<span class="fa fa-html5"></span>
+							</div>
+							<h2>Ticker</h2>
+							<p>티커</p>
+						</li>
+						
+						<li>
+							<div class="icon">
+								<span class="fa fa-magic"></span>
+							</div>
+							<h2>Rabbit</h2>
+							<p>래빗</p>
+						</li>
+						
+						<li>
+							<div class="icon">
+								<span class="fa fa-code"></span>
+							</div>
+							<h2>Flower</h2>
+							<p>플라</p>
+						</li>
+						
+						<li id="demo-love">
+							<div class="icon">
+								<span class="fa fa-heart"></span>
+							</div>
+							<h2>Project</h2>
+							<p>프로젝트</p>
+						</li> 
+					</ul>
+					
+				</div>
+			</section>
+			<!-- // END SERVICES // -->
+			
+			<section id="last-section" class="page fullwidth">
+				<header>
+					<nav>
+						<ul>
+							<li><a href="#" class="btn no-color" data-page="feedback">Message</a></li>
+						</ul>
+					</nav>
+					
+					<div class="triangle"></div>
+				</header>
+			</section>
+			
+		</section>
+		<!-- // END CONTENT // -->
+		
+		<div id="footer-space"></div>
+		
+		<!-- // FOOTER // -->
+		<footer>
+			<div class="wrapper">
+				
+				
+				
+				<!-- // FEEDBACK // -->
+				<section id="feedback" class="page image">
+					<div class="wrapper align-center">
+						<ul>
+							<li class="text">
+								<h2>마음을 전달하세요.</h2>
+								<hr>
+								<p>I love you.</p>
+							</li>
+							
+							<li>
+								<form action="engine/feedback.php" method="post" class="flat">
+									<div>
+										<input type="text" name="name" value="" placeholder="이름이 뭐에요?">
+										<input type="email" name="email" value="" placeholder="태그를 입력해주세요.">
+										<textarea name="message" placeholder="무엇을 전달하고 싶으세요?"></textarea>
+									</div>
+									
+									<div>
+										<span class="status" 
+											data-success="Your message was succesfuly sent"
+											data-error="Something goes wrong">
+										</span>
+										<input type="submit" value="Send" class="btn">
+									</div>
+								</form>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<!-- // END FEEDBACK // -->
+				
+				
+				
+			</div>
+		</footer>
+		<!-- // END FOOTER // -->
+
+	</body>		
+</html>
