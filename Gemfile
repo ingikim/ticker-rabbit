@@ -31,11 +31,6 @@ gem 'jbuilder', '~> 1.2'
 gem 'bootstrap-sass'
 gem 'fotoramajs'
 
-group :doc do
-  # bundle exec rake doc:rails generates the API under doc/api.
-  gem 'sdoc', require: false
-end
-
 group :development, :test do
      gem 'sqlite3'
 end
@@ -43,6 +38,11 @@ end
 group :production do
      gem 'pg'
      gem 'rails_12factor'
+end
+
+group :doc do
+  # bundle exec rake doc:rails generates the API under doc/api.
+  gem 'sdoc', require: false
 end
 
 # Use ActiveModel has_secure_password
